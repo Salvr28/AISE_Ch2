@@ -9,6 +9,8 @@ import logging
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
+#TEST PER IL PUSHHH#######################
+
 def prep_store_data(df: pd.DataFrame, store_id: int = 4, store_open: int = 1) -> pd.DataFrame:
     df['Date'] = pd.to_datetime(df['Date'])
     df.rename(columns= {'Date': 'ds', 'Sales': 'y'}, inplace=True)
